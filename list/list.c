@@ -6,6 +6,11 @@ struct node {
 	struct node *next;
 };
 
+/*creates a new node and return the pointer to 
+ *that node to the caller
+ *input <- integer data.
+ *output <- pointer to newly created node which is allocated in stack.
+ */
 struct node *new(int data)
 {
 	struct node *temp;
@@ -16,6 +21,10 @@ struct node *new(int data)
 
 }
 
+/*builds a set {1,2,3} 
+ * and return the pointer to that list 
+ * output -> pointer to head of that list.
+ */
 struct node *BuildOneTwoThree()
 {
 	struct node *head = NULL;
@@ -25,6 +34,10 @@ struct node *BuildOneTwoThree()
 	return head;
 }
 
+/*counts the no of elements in a list.
+ *input <- pointer to the start of a list .
+ *output -> the no of nodes in the list.
+ */
 int Length(struct node *head)
 {
 	int count = 0;
@@ -35,6 +48,10 @@ int Length(struct node *head)
 	return count;
 }
 
+/*pushes an element of a given position in a list.
+ *input <- a reference to the starting node of the list and a integer data.
+ *output -> none.
+ */
 void push(struct node ** headRef,int newData)
 {
 	struct node *temp;
@@ -43,6 +60,9 @@ void push(struct node ** headRef,int newData)
 	*headRef = temp;
 }
 
+/*prints the no of elements in a list.
+ *input <- the pointer to the starting node of a list.
+ */
 void print(struct node *head)
 {
 	while(head) {
@@ -51,7 +71,8 @@ void print(struct node *head)
 	}
 }
 
-
+/*searches for an element in a list and return the position of that element  * that list .
+ */
 int Count(struct node *head,int searchFor)
 {
 	int count = 0;
