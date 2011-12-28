@@ -1,0 +1,1 @@
+cmd_/home/tonylijo/sirnote/chr_rtc.ko := ld -r -m elf_i386 -T /usr/src/linux-3.0/scripts/module-common.lds --build-id  -o /home/tonylijo/sirnote/chr_rtc.ko /home/tonylijo/sirnote/chr_rtc.o /home/tonylijo/sirnote/chr_rtc.mod.o

@@ -1,0 +1,1 @@
+cmd_/home/tonylijo/sirnote/ghost.ko := ld -r -m elf_i386 -T /usr/src/linux-3.0/scripts/module-common.lds --build-id  -o /home/tonylijo/sirnote/ghost.ko /home/tonylijo/sirnote/ghost.o /home/tonylijo/sirnote/ghost.mod.o

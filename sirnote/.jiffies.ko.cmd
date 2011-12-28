@@ -1,0 +1,1 @@
+cmd_/home/tonylijo/sirnote/jiffies.ko := ld -r -m elf_i386 -T /home/ic2011/linux-3.0/scripts/module-common.lds --build-id  -o /home/tonylijo/sirnote/jiffies.ko /home/tonylijo/sirnote/jiffies.o /home/tonylijo/sirnote/jiffies.mod.o

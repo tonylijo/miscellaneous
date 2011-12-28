@@ -1,0 +1,1 @@
+cmd_/home/tonylijo/sirnote/procfs2.ko := ld -r -m elf_i386 -T /usr/src/linux-3.0/scripts/module-common.lds --build-id  -o /home/tonylijo/sirnote/procfs2.ko /home/tonylijo/sirnote/procfs2.o /home/tonylijo/sirnote/procfs2.mod.o

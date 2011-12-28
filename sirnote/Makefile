@@ -1,0 +1,12 @@
+obj-m := chr_drv2.o
+obj-m := simple_read.o
+obj-m := busy_looping.o
+obj-m := ioctl.o
+obj-m := blocking.o
+obj-m := jiffies.o
+obj-m := rtc.o
+obj-m := chr_rtc.o
+obj-m := python.o
+obj-m := ghost.o
+obj-m := new.o
+obj-m := procfs2.o

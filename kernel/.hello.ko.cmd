@@ -1,0 +1,1 @@
+cmd_/home/tonylijo/kernel/hello.ko := ld -r -m elf_i386 -T /usr/src/linux-3.0/scripts/module-common.lds --build-id  -o /home/tonylijo/kernel/hello.ko /home/tonylijo/kernel/hello.o /home/tonylijo/kernel/hello.mod.o
