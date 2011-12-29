@@ -1,0 +1,39 @@
+		Asimptotic notations
+		--------------------
+
+
+BIG O NOTATION (Upper bound) 
+--------------
+f(n) = O(g(n)) means that there exists two constants c>0, n0>0 such that 
+0<f(n) <= c*g(n) for all n >= n0;ie f(n) is bounded by g(n).
+
+examples:
+	2n^2 = O(n^3) 
+	heare the equality is asymatric ie, the LHS NOT EQUAL TO THE RHS.
+
+SET DEFANITION
+--------------
+
+O(g(n)) = { f(n) : there exisist two constans c and n0 such that f(n) <= c.g(n)
+for all n >= n0}
+
+O(g(n)) is defined as set of all functions f(n) satifying the above property.
+2n^2 = O(n^3) means that 2n^2 belongs to the set O(n^2) by the set theoritic 
+defanition.
+
+
+MACRO CONVENTION
+----------------
+
+A set in a formula represents an anonimous function in that set.
+f(n) = n^3 + O(n^2) means that there is a function h(n) belongs to O(n^2) . such
+that f(n) = n^3 + h(n).
+
+Example.
+n^2 + O(n) = O(n^2)
+
+
+BIG OMEGA NOTATION (lower bound)
+------------------
+OMEGA(g(n)) = { f(n) : such that there exists two constants c and n0, such that
+0<c.g(n) <= f(n) for all n >= n0};
