@@ -111,6 +111,34 @@ void GetNthTest()
 	printf("the data at index two is %d\n",lastnode);
 }
 
+void SortedInsert(struct node **headRef,struct node *newnode)
+{
+	if(*headRef == NULL || newnode->data < *(headRef)->data) {
+		newnode->next = *headRef;
+		*headRef = newnode;
+	} else {
+		struct node *current = *headRef;
+		while(current->next != NULL && current->next->data < newnode->data) {
+			current = current->next;
+		}
+		newnode->next = current->next;
+		current->next = newnode;
+	}
+}
+
+void InsertSort(struct node **headRef)
+{
+	struct node *current = *headRef;
+	struct node *next = NULL;
+	struct node *result = NULL;
+	while(current) {
+		next = current->next;
+		SortedInsert(&result,current);
+		current = next;
+	}
+	*headRef = result;
+}
+
 void BasicsCaller()
 {
 	struct node *head;
@@ -176,6 +204,20 @@ void InsertNth(struct node **head,int index,int data)
 			current = current->next;
 		}
 	}
+}
+
+void Append(struct node **aRef,struct node **bRef)
+{
+	struct node *a = *aRef;
+	if(a) {
+		while(a->next) {
+			a = a->next;
+		}
+		a->next = *bRef;
+	} else {
+		*aRef = *bRef;
+	}
+	*bRef = NULL;
 }
 
 void InsertNthTest()
