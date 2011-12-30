@@ -229,6 +229,10 @@ void InsertNthTest()
 
 	DeleteList(&head);
 }
+void InsertSort(struct node **headRef) 
+{
+	struct node *result = NULL;
+	struct node *current = *headRef;
 
 int main(int argc,char *argv[])
 {
