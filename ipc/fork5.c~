@@ -1,0 +1,7 @@
+#include<unistd.h>
+#include<stdio.h>
+
+void child(int i)
+{
+  while(1) {printf("i am child %d \n",i);}
+}

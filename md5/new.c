@@ -52,7 +52,7 @@ char *get_vm_addr(char *filename)
   int file_size = get_size(filename);
   
   if((fd = open(filename,O_RDONLY)) < 0) 
-    err_exit("open:");
+    err_exit("open2:");
 
   if((map = mmap(NULL,file_size,
 	PROT_READ,MAP_PRIVATE,fd,0)) == MAP_FAILED) {
@@ -70,7 +70,7 @@ int get_size(char *filename)
   struct stat sb;
   int fd;
   if((fd = open(filename,O_RDONLY)) < 0) 
-    err_exit("open:");
+    err_exit("open1:");
   if(fstat(fd,&sb) == -1) 
     err_exit("fstat");
   close(fd);
