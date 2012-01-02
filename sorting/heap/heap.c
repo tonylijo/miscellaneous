@@ -1,8 +1,10 @@
 #include<stdio.h>
 #include<stdlib.h>
-int heap[100];
 #define HEAPSIZE 100
+
+int heap[HEAPSIZE];
 int heapsize;
+
 void swap(int *a,int *b)
 {
 	int temp;

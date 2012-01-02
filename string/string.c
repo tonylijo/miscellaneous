@@ -48,10 +48,10 @@ void strrev_1(char *src)
 		return;
 	}
        	if(src > &last[-temp]) {
-		printf("%d\n",temp);
 		swap(src,&last[-temp]);
 	}
 }
+
 int main()
 {
 	char str1[] = "tony";

@@ -1,0 +1,5 @@
+ECHO server
+-----------
+
+This is a test server program which echos the message which is send by the clinet back to the 
+client itself.

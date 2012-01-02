@@ -4,6 +4,7 @@
 
 static int heap[100];
 static heapsize;
+
 void swap(int *a,int *b)
 {
 	int temp;
@@ -11,6 +12,7 @@ void swap(int *a,int *b)
 	*a = *b;
 	*b = temp;
 }
+
 int parent(int index)
 {
 	return index/2;
